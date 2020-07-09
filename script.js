@@ -22,7 +22,7 @@ const addCardBox = () => {
     faceCard.innerHTML = "<img src='images/cardBug.png'>";
   } else if (rand === 1) {
     faceCard.innerHTML = "<img src='images/cardTheEnd.png'>";
-  }
+  };
   cardBox.appendChild(faceCard);
 
   const cardOnClick = () => cardBox.classList.toggle('flip');
@@ -34,7 +34,7 @@ const addCardBox = () => {
     } else {
       cardOnClick();
       isCardClick = true;
-      }
+      };
   });
 };
 
@@ -45,8 +45,8 @@ const startGame = () => {
     if (level.checked) {
       selectedLevel = level.value;
       break;
-    }
-  }
+    };
+  };
   const cards =  document.querySelectorAll('.card_box');
   cards.forEach(item => item.remove());
   menuField.style.display = 'none';
@@ -54,19 +54,19 @@ const startGame = () => {
   if (selectedLevel === 'easy') {
     gameField.className = 'game_treecard';
     for ( let i = 0; i < 3; i++) {
-    addCardBox();
-    }
+      addCardBox();
+    };
   } else if (selectedLevel === 'medium') {
     gameField.className = 'game_sixcard';
     for ( let i = 0; i < 6; i++) {
-    addCardBox();
-    }
+      addCardBox();
+    };
   } else if (selectedLevel === 'hard') {
     gameField.className = 'game_tencard';
     for ( let i = 0; i < 10; i++) {
-    addCardBox();
-    }
-  }
+       addCardBox();
+    };
+  };
 };
 
 button.addEventListener('click', startGame);
