@@ -11,7 +11,7 @@ const addCardBox = () => {
   cardBox.className = 'card_box';
 
   const shirt = document.createElement('div');
-  shirt.innerHTML="<img src='images/card.png'>";
+  shirt.innerHTML="<img class='picture' src='images/card.png'>";
   cardBox.appendChild(shirt);
   shirt.className = 'shirt';
 
@@ -19,9 +19,9 @@ const addCardBox = () => {
   faceCard.className = 'face';
   let rand = Math.floor(Math.random() * 2);
   if (rand === 0) {
-    faceCard.innerHTML = "<img src='images/cardBug.png'>";
+    faceCard.innerHTML = "<img class='picture' src='images/cardBug.png'>";
   } else if (rand === 1) {
-    faceCard.innerHTML = "<img src='images/cardTheEnd.png'>";
+    faceCard.innerHTML = "<img class='picture' src='images/cardTheEnd.png'>";
   };
   cardBox.appendChild(faceCard);
 

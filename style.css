@@ -66,8 +66,11 @@ body {
 }
 
 .columns {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -184,5 +187,28 @@ body {
     padding-top: 30px;
     width: 300px;
     background: transparent;
+  }
+
+  .game_treecard {
+    width: 300px;
+  }
+
+  .game_sixcard {
+    width: 300px;
+  }
+
+  .game_tencard {
+    width: 300px;
+  }
+
+  .card_box,
+  .shirt,
+  .face {
+    width: 50px;
+    height: 100px;
+  }
+
+  .picture {
+    width: 100%;
   }
 }
