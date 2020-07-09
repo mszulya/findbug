@@ -16,6 +16,7 @@ body {
   right: 0;
   top: 50%;
   margin: 0 auto;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -103,6 +104,7 @@ body {
   right: 0;
   margin: 0 auto;
   top: 50%;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -119,6 +121,7 @@ body {
   right: 0;
   margin: 0 auto;
   top: 50%;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 
@@ -147,14 +150,23 @@ body {
 
 .shirt:hover {
   cursor: pointer;
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
 }
 
 .face {
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .flip {
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
