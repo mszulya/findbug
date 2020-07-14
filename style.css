@@ -129,7 +129,14 @@ body {
 }
 
 .game_tencard {
-  padding: 157px 126px;
+  width: 1186px;
+  height: 706px;
+  padding: 10px;
+  top: calc(50% - 350px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(5, 1fr);
@@ -200,7 +207,7 @@ body {
   .title {
     font-size: 30px;
     margin-bottom: 10px;
-}
+  }
 
   .subtitle {
     font-size: 15px;
@@ -232,7 +239,7 @@ body {
   }
 
   .game_tencard {
-    padding: 20px 20px;
+    width: 180px;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr 1fr;
