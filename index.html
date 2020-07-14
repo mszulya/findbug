@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <title>Bug</title>
+  </head>
+  <body>
+  	<div class="wrap">
+	  	<div class="title">
+	  		Выберите уровень сложности:
+	  	</div>
+	  	<div class="subtitle">
+	  		Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.
+	  	</div>
+	  	<div>
+        <label class="label">
+        	<input type="radio" class="radio" name="level" value="easy" id="easyLevel">
+        	<span class="fake"></span>
+        	<span class="text">Простой</span>
+        </label>
+        <label class="label">
+        	<input checked type="radio" class="radio" name="level" value="medium" id="mediumLevel">
+        	<span class="fake"></span>
+        	<span class="text">Средний</span>
+	  		</label>
+	  		<label class="label">
+	  			<input type="radio" class="radio" name="level" value="hard" id="hardLevel">
+	  			<span class="fake"></span>
+	  			<span class="text">Сложный</span>
+	  		</label>
+	  	</div>
+	  	<div class="columns">
+		  	<div class="btn" id="btn">Начать игру</div>
+		  	<img class="cards_main" src="images/card2.png" alt="карты">
+		  </div>
+	  </div>
+	  <script src= "script.js" type="text/javascript"></script>
+  </body>
+</html>
